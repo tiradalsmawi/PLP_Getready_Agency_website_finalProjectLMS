@@ -1,0 +1,36 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <!-- <div class="create-blog content"> -->
+    <h1>Create a New Blog</h1>
+    <form action="/blogs" method="POST">
+      <label>Title:</label>
+      <input type="text" name="title" required>
+      <label>Content:</label>
+      <textarea name="content" required></textarea>
+      <label>Category:</label>
+      <select name="category">
+        <option value="scholarships">Scholarships</option>
+        <option value="opportunities">Opportunities</option>
+        <option value="abroad">Abroad</option>
+        <option value="jobs">Jobs</option>
+      </select>
+      <button type="submit">Add Blog</button>
+    </form>
+    <!-- <form action="/blogs" method="POST">
+      <label for="title">Blog title:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="snippet">Blog snippet:</label>
+      <input type="text" id="snippet" name="snippet" required>
+      <label for="body">Blog body:</label>
+      <textarea id="body" name="body" required></textarea>
+      <button>Submit</button>
+    </form> -->
+  <!-- </div> -->
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

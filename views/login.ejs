@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <head>
+    <!-- Link to the new CSS file for the login page -->
+    <link rel="stylesheet" href="assets/css/login.css">
+  </head>
+
+  <body > <!-- Add a class to the body for targeting the login page specifically -->
+    <%- include("./partials/nav.ejs") %>
+
+    <!-- login.ejs -->
+    <section class="login-page">
+        <div class="login-container">
+            <h1>     Log in </h1>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+              </form>
+              
+        </div>
+
+    </section>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+
+/* Set the background image only for the login page */
+.login-page {
+    padding: 15%;
+    align-items: center;
+    background-image: url('https://i.postimg.cc/KvPBWjPx/Yellow-And-Pink-Colorful-Canva-Banner.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
+  }
+  
+  /* Style for the login form container */
+  .login-container {
+    align-items: center;
+    padding: 60px;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for form elements */
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container input,
+  .login-container button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-container button {
+    background-color: #545454;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #333;
+  }
+  
+  @media only screen and (max-width: 1024px){
+    .login-page{
+        height: 70vh;
+        padding:  10%;
+    }
+    .login-container{
+        margin-top: 70px;
+
+    }
+  }
+  
+
+  /* ........ Sing Up............ */
+  /* Sign-Up Page Styles */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://i.postimg.cc/KvPBWjPx/Yellow-And-Pink-Colorful-Canva-Banner.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .signup-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .signup-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .signup-container label {
+    font-size: 16px;
+    color: #333;
+  }
+  .signup-container input[type="text"],
+  .signup-container input[type="email"],
+  .signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .signup-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .signup-container {
+      width: 90%; /* Adjust form width on small screens */
+    }
+  }

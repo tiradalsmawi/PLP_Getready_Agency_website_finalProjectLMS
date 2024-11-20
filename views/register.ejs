@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+  <head>
+    <!-- Link to the new CSS file for the sign up page -->
+    <link rel="stylesheet" href="assets/css/login.css">
+  </head>
+
+  <body> <!-- Add a class to the body for targeting the sign-up page specifically -->
+    <%- include("./partials/nav.ejs") %>
+
+      <!-- sign-up.ejs -->
+      <section class="signup-page">
+        <div class="signup-container">
+          <h1>Sign Up Page</h1>
+          <form action="/register" method="POST">
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </section>
+
+      <%- include("./partials/footer.ejs") %>
+  </body>
+
+</html>
